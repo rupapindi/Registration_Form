@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Example</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form onsubmit="showmessage(event)">
+    <label for="full name">Full Name:</label>
+    <input type="text" id="full name" name="full name"><br><br>
+    <label for="email">Email id:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br><br> 
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="Male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label><br><br>
+    <label>Interests:</label><br>
+    <input type="checkbox" id="coding" name="interests" value="Coding">
+    <label for="coding">Coding</label><br>
+    <input type="checkbox" id="music" name="interests" value="Music">
+    <label for="music">Music</label><br>
+    <input type="checkbox" id="dancing" name="interests" value="Dancing">
+    <label for="dancing">Dancing</label><br><br>
+    <label for="country">Country:</label>
+    <select id="country" name="country">
+        <option value="usa">USA</option>
+        <option value="uk">UK</option>
+        <option value="india">India</option>
+        <option value="russia">Russia</option>
+        <option value="ssweden">Sweden</option>
+    </select>
+    <br><br>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+    <script>
+        function showmessage(event)
+        {
+            event.preventDefault();
+            alert("Registration is completed sucessfully!");
+            document.queryselector("form").reset();
+        
+        }
+    </script>
+</form>
+</body>
+</html>
+
+
